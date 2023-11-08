@@ -1,0 +1,47 @@
+#installition
+    pip install flask
+    pip install flask-bootstrap
+    pip install flask-ckeditor
+    pip install WTForms
+    pip install Flask-MySQLdb
+    pip install PyYAML
+    pip install Flask flask-bootstrap flask-mysqldb Flask-CKEditor
+
+
+# Endpoint Design
+ 
+    Request Type            Endpoint                Description
+    -----------------------------------------------------------
+    GET                     /                       Loads the home page of the application. Links to all te blogs should be listed here.
+    GET                     /about                  This should load the 'about' page of our application.
+    GET                     /register               Loads a form to register a user.
+    POST                    /register               Loads a form to register a user.
+    GET                     /login                  Loads a form for user login.
+    POST                    /login                  Validates te credentials entered and logs in the user.
+    GET                     /write-blog             Loads a form using which the user can write a blogpost.
+    POST                    /write-blog             Creates a new blog in the database.
+    GET                     /blogs/<int:id>         Loads the blogspost wit the given id.
+    GET                     /my-blogs               Lists all te links of blogs written by the logged in user.
+    GET                     /edit-blog/<int:id>     Loads a form with ccontents from the blogpost of the id mentioned.
+    POST                    /edit-blog/<int:id>     Updates the blogpost with te given id.
+    POST                    /delete-blog/<int:id>   Deletes the blogpost with the given id.
+    GET                     /logout                 Logs out the current user.
+
+
+ #DB   
+
+ db name : flaskdb02_blog
+
+ users
+    UserID : PK, Int, auto Increment
+    Firstname : Varchar
+    LastName : Varchar
+    Email : varchar, uniqie
+    Username : varchar, uniqie
+    Pass: Varchar
+
+ blog
+    BlogID : PK, INT, AI 
+    Title: Varchar  
+    Author : Varchar
+    Body :  Varchar

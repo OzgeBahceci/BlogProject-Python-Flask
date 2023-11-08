@@ -1,0 +1,10 @@
+{% with messages =get_flashed_messages()%}
+    {%if messages %}
+        <ul class=flashes>
+            {% for messages in messages%}
+            <li> {{ messages}} </li>
+            {%end for%}
+        </ul>
+    {% endif %}        
+{%endwith%}    
+{% block body %} {% endblock%}

@@ -1,0 +1,5 @@
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: 'Oz13ge24'
+mysql_db: 'flaskdb02_blog'
+DictCursor: 'DictCursor'

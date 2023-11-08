@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+    <div class="text-center">
+        <h1>My Blogs</h1>
+    </div>
+    <table cellpadding="5">
+        {% for blog in myBlogs %}
+            <tr>
+                <td style="padding:0 15px;">
+                    <h3><a href="/blogs/{{ blog['BlogID'] }}">{{ blog['Title'] }}</a></h3>
+                </td>
+                <td style="padding:0 15px;">
+                    <h3><a href="/edit-blog/{{ blog['BlogID'] }}" class="btn btn-primary">Edit</a></h3>
+                </td>
+                <td style="padding:0 15px;">
+                    <form method="POST" action="/delete-blog/{{ blog['BlogID'] }}">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

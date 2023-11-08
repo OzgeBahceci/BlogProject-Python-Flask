@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Özge's Blog Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* Gezinme Menüsü Stili */
+        .navbar {
+            background-color: #333;
+            border: none;
+            border-radius: 0;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black !important;
+        }
+
+        .navbar .navbar-brand {
+            color: white;
+        }
+
+        .navbar .navbar-brand:hover {
+            color: white;
+        }
+
+        /* Giriş Sayfası Stili */
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px #666;
+        }
+
+        .login-form h1 {
+            text-align: center;
+        }
+
+        .login-form .form-group {
+            margin: 15px 0;
+        }
+
+        .login-form label {
+            font-weight: bold;
+        }
+
+        .login-form .form-control {
+            border-radius: 3px;
+        }
+
+        .login-form .btn {
+            background: #333;
+            color: white;
+            border: none;
+        }
+
+        .login-form .btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Gezinme Menüsü -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Özge's Blog Page</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="/write-blog">Write a New Blog</a></li>
+            <li><a href="/my-blogs">View My Blogs</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blogs">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
